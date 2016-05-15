@@ -1,0 +1,70 @@
+Source: ircmatch
+Section: python
+Priority: optional
+Maintainer: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9),
+ dh-python,
+ python-all (>= 2.6.6-3~),
+ python-setuptools,
+ python3-all,
+ python3-setuptools
+Standards-Version: 3.9.8
+Homepage: https://github.com/mammon-ircd/ircmatch
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+Vcs-Git: https://github.com/GLolol/ircmatch
+Vcs-Browser: https://github.com/GLolol/ircmatch
+
+Package: python-ircmatch
+Architecture: any
+Depends: ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Suggests: python-ircmatch-doc
+Description: library for matching IRC masks based on atheme (Python 2)
+ ircmatch is a Python extension which provides string comparison and matching
+ functions from Atheme. They are hand-optimized for high performance when
+ matching IRC hostmasks.
+ .
+ This package installs the extension for Python 2.
+
+Package: python-ircmatch-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: python-ircmatch (= ${binary:Version}),
+         ${misc:Depends},
+         ${python:Depends},
+         ${shlibs:Depends}
+Recommends: python-dbg
+Description: library for matching IRC masks based on atheme (debugging files)
+ ircmatch is a Python extension which provides string comparison and matching
+ functions from Atheme. They are hand-optimized for high performance when
+ matching IRC hostmasks.
+ .
+ This package contains the extension built for the Python 2 debug interpreter.
+
+Package: python3-ircmatch
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Suggests: python-ircmatch-doc
+Description: library for matching IRC masks based on atheme (Python 3)
+ ircmatch is a Python extension which provides string comparison and matching
+ functions from Atheme. They are hand-optimized for high performance when
+ matching IRC hostmasks.
+ .
+ This package installs the extension for Python 3.
+
+Package: python3-ircmatch-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: python3-ircmatch (= ${binary:Version}),
+         ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends}
+Recommends: python3-dbg
+Description: library for matching IRC masks based on atheme (debugging files)
+ ircmatch is a Python extension which provides string comparison and matching
+ functions from Atheme. They are hand-optimized for high performance when
+ matching IRC hostmasks.
+ .
+ This package contains the extension built for the Python 3 debug interpreter.

@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+export PYBUILD_NAME=ircmatch
+
+%:
+	dh $@  --with python2,python3 --buildsystem=pybuild
+
+# Create separate -dbg packages, from
+# https://wiki.debian.org/Python/LibraryStyleGuide#Building_python_-dbg_packages
+override_dh_strip:
+	dh_strip -ppython-ircmatch  --dbg-package=python-ircmatch-dbg
+	dh_strip -ppython3-ircmatch --dbg-package=python3-ircmatch-dbg
