@@ -1,3 +1,10 @@
+ircmatch (1.2+git20160514+7~0083a41-0utopia1) unstable; urgency=medium
+
+  * Fix Python build dependencies.
+  * Use a more specific version and add a get-orig-source rule.
+
+ -- James Lu <bitflip3@gmail.com>  Fri, 28 Oct 2016 23:36:06 -0700
+
 ircmatch (1.2+git20160514-0utopia1) unstable; urgency=medium
 
   * Initial Utopia Repository release.

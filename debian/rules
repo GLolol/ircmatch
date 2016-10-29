@@ -13,3 +13,21 @@ export PYBUILD_NAME=ircmatch
 override_dh_strip:
 	dh_strip -ppython-ircmatch  --dbg-package=python-ircmatch-dbg
 	dh_strip -ppython3-ircmatch --dbg-package=python3-ircmatch-dbg
+
+# get-orig-source rule to fetch the sources from the Git snapshot.
+# This looks as the "commithash" portion of the Debian package version, in the
+# format majorversion~commithash-1.
+PACKAGE = $(shell dpkg-parsechangelog --show-field=Source)
+VERSION = $(shell dpkg-parsechangelog --show-field=Version)
+ORIG_VERSION = $(shell echo $(VERSION) | cut -f 1 -d '-')
+COMMIT = $(shell echo $(ORIG_VERSION) | cut -f 2 -d '~')
+URL = https://github.com/mammon-ircd/ircmatch
+
+get-orig-source:
+	# Cloning upstream repository.
+	git clone $(URL) "$(PACKAGE)-$(ORIG_VERSION)"
+	# Generating archive from commit.
+	cd "$(PACKAGE)-$(ORIG_VERSION)" && git archive -v $(COMMIT) -o \
+	../$(PACKAGE)_$(ORIG_VERSION).orig.tar.gz
+	# Removing temporary Git tree.
+	rm -rf "$(PACKAGE)-$(ORIG_VERSION)"
