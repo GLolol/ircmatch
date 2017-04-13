@@ -8,11 +8,9 @@ export PYBUILD_NAME=ircmatch
 %:
 	dh $@  --with python2,python3 --buildsystem=pybuild
 
-# Create separate -dbg packages, from
-# https://wiki.debian.org/Python/LibraryStyleGuide#Building_python_-dbg_packages
 override_dh_strip:
-	dh_strip -ppython-ircmatch  --dbg-package=python-ircmatch-dbg
-	dh_strip -ppython3-ircmatch --dbg-package=python3-ircmatch-dbg
+	dh_strip --dbgsym-migration='python-ircmatch-dbg (<< 1.2+git20160514+7~0083a41-0utopia2~)'
+	dh_strip --dbgsym-migration='python3-ircmatch-dbg (<< 1.2+git20160514+7~0083a41-0utopia2~)'
 
 # get-orig-source rule to fetch the sources from the Git snapshot.
 # This looks as the "commithash" portion of the Debian package version, in the
