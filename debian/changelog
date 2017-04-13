@@ -1,3 +1,11 @@
+ircmatch (1.2+git20160514+7~0083a41-0utopia2) unstable; urgency=low
+
+  * Migrate to automatic debug symbols.
+    - Bump debhelper dependency version to (>= 9.20160114)
+  * Update Vcs-* URLs.
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 12 Apr 2017 16:50:40 -0700
+
 ircmatch (1.2+git20160514+7~0083a41-0utopia1) unstable; urgency=medium
 
   * Fix Python build dependencies.
