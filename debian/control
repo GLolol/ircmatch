@@ -12,8 +12,8 @@ Standards-Version: 3.9.8
 Homepage: https://github.com/mammon-ircd/ircmatch
 X-Python-Version: >= 2.6
 X-Python3-Version: >= 3.2
-Vcs-Git: https://github.com/GLolol/ircmatch
-Vcs-Browser: https://github.com/GLolol/ircmatch
+Vcs-Git: https://github.com/utopia-repository/ircmatch
+Vcs-Browser: https://github.com/utopia-repository/ircmatch
 
 Package: python-ircmatch
 Architecture: any
