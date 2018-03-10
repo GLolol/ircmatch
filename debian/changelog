@@ -3,6 +3,9 @@ ircmatch (1.2+git20160514+7~0083a41-0utopia3) UNRELEASED; urgency=medium
   * Bump Standards-Version to 4.1.3.
   * Update to debhelper 11.
   * Update my email and copyright years.
+  * Enable builds for debug interpreters - python-ircmatch-dbg and
+    python3-ircmatch-dbg
+  * Run wrap-and-sort.
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 09 Mar 2018 19:36:48 -0800
 
