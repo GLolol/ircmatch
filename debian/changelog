@@ -1,4 +1,4 @@
-ircmatch (1.2+git20160514+7~0083a41-0utopia3) UNRELEASED; urgency=medium
+ircmatch (1.2+git20160514+7~0083a41-0utopia3) unstable; urgency=medium
 
   * Bump Standards-Version to 4.1.3.
   * Update to debhelper 11.
@@ -8,7 +8,7 @@ ircmatch (1.2+git20160514+7~0083a41-0utopia3) UNRELEASED; urgency=medium
   * Run wrap-and-sort.
   * Remove suggestions on non-existent package python-ircmatch-doc.
 
- -- James Lu <james@overdrivenetworks.com>  Fri, 09 Mar 2018 19:36:48 -0800
+ -- James Lu <james@overdrivenetworks.com>  Fri, 09 Mar 2018 20:33:12 -0800
 
 ircmatch (1.2+git20160514+7~0083a41-0utopia2) unstable; urgency=low
 
