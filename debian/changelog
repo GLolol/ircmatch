@@ -6,6 +6,7 @@ ircmatch (1.2+git20160514+7~0083a41-0utopia3) UNRELEASED; urgency=medium
   * Enable builds for debug interpreters - python-ircmatch-dbg and
     python3-ircmatch-dbg
   * Run wrap-and-sort.
+  * Remove suggestions on non-existent package python-ircmatch-doc.
 
  -- James Lu <james@overdrivenetworks.com>  Fri, 09 Mar 2018 19:36:48 -0800
 

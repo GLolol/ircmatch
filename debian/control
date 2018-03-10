@@ -20,7 +20,6 @@ Vcs-Browser: https://github.com/utopia-repository/ircmatch
 Package: python-ircmatch
 Architecture: any
 Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends}
-Suggests: python-ircmatch-doc
 Description: library for matching IRC masks based on atheme (Python 2 debug extension)
  ircmatch is a Python extension which provides string comparison and matching
  functions from Atheme. They are hand-optimized for high performance when
@@ -34,7 +33,6 @@ Depends: python-ircmatch (= ${binary:Version}),
          ${misc:Depends},
          ${python:Depends},
          ${shlibs:Depends}
-Suggests: python-ircmatch-doc
 Description: library for matching IRC masks based on atheme (Python 2 debug extension)
  ircmatch is a Python extension which provides string comparison and matching
  functions from Atheme. They are hand-optimized for high performance when
@@ -45,7 +43,6 @@ Description: library for matching IRC masks based on atheme (Python 2 debug exte
 Package: python3-ircmatch
 Architecture: any
 Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}
-Suggests: python-ircmatch-doc
 Description: library for matching IRC masks based on atheme (Python 3)
  ircmatch is a Python extension which provides string comparison and matching
  functions from Atheme. They are hand-optimized for high performance when
@@ -59,7 +56,6 @@ Depends: python3-ircmatch (= ${binary:Version}),
          ${misc:Depends},
          ${python3:Depends},
          ${shlibs:Depends}
-Suggests: python-ircmatch-doc
 Description: library for matching IRC masks based on atheme (Python 3 debug extension)
  ircmatch is a Python extension which provides string comparison and matching
  functions from Atheme. They are hand-optimized for high performance when
