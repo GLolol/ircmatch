@@ -8,10 +8,6 @@ export PYBUILD_NAME=ircmatch
 %:
 	dh $@  --with python2,python3 --buildsystem=pybuild
 
-override_dh_strip:
-	dh_strip --dbgsym-migration='python-ircmatch-dbg (<< 1.2+git20160514+7~0083a41-0utopia2~)'
-	dh_strip --dbgsym-migration='python3-ircmatch-dbg (<< 1.2+git20160514+7~0083a41-0utopia2~)'
-
 # get-orig-source rule to fetch the sources from the Git snapshot.
 # This looks as the "commithash" portion of the Debian package version, in the
 # format majorversion~commithash-1.
