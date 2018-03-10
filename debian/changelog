@@ -1,3 +1,11 @@
+ircmatch (1.2+git20160514+7~0083a41-0utopia3) UNRELEASED; urgency=medium
+
+  * Bump Standards-Version to 4.1.3.
+  * Update to debhelper 11.
+  * Update my email and copyright years.
+
+ -- James Lu <james@overdrivenetworks.com>  Fri, 09 Mar 2018 19:36:48 -0800
+
 ircmatch (1.2+git20160514+7~0083a41-0utopia2) unstable; urgency=low
 
   * Migrate to automatic debug symbols.
